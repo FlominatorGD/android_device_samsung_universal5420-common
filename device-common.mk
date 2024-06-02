@@ -39,7 +39,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     tinymix \
-    android.hardware.audio.service \
+    android.hardware.audio.service.exynos5 \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl
 
