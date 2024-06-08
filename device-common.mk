@@ -16,6 +16,19 @@
 
 COMMON_PATH := device/samsung/universal5420-common
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/samsung/aidl/power-libperfmgr \
+    hardware/samsung \
+    hardware/ril \
+    hardware/lineage/compat \
+    hardware/samsung_slsi/exynos \
+    hardware/samsung_slsi/exynos5 \
+    hardware/samsung_slsi/exynos5420
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay \
