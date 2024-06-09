@@ -69,6 +69,7 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_IMAGE_NAME := zImage
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
+BOARD_USES_FULL_RECOVERY_IMAGE := false
 
 # Filesystems
 BOARD_HAS_LARGE_FILESYSTEM := true
