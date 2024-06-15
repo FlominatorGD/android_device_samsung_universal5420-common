@@ -159,7 +159,15 @@ PRODUCT_PACKAGES +=  \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service.universal5420
+    android.hardware.power-service.samsung-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Permissions
 PRODUCT_COPY_FILES += \
