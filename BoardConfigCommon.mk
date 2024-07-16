@@ -104,7 +104,7 @@ BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_SOC := exynos5420
 TARGET_BOOTLOADER_BOARD_NAME := universal5420
-include hardware/samsung_slsi-linaro/config/BoardConfig5420.mk
+include hardware/samsung_slsi/config/BoardConfig5420.mk
 
 # Power
 TARGET_POWERHAL_VARIANT := samsung
