@@ -34,12 +34,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwc.winupdate=0 \
-    ro.bq.gpu_to_cpu_unsupported=1 \
-    ro.surface_flinger.running_without_sync_framework = true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers = 3 \
     debug.sf.disable_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
-    ro.opengles.version=196609
+    ro.opengles.version=196609 \
+    ro.hardware.egl=mali \
+    ro.hardware.vulkan=mali
+
+# Blur
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=0 \
+    persist.sys.sf.disable_blurs=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
